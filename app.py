@@ -71,7 +71,7 @@ def index():
                 reviews.append(mydict)
             return render_template('results.html', reviews=reviews[0:(len(reviews)-1)])
         except Exception as e:
-            print('The Exception message is: ',e)
+            print('The Exception message is: ', e)
             return 'something is wrong'
     # return render_template('results.html')
 
